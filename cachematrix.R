@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The purpouse of these functions is to generate a matrix (makeCacheMatrix)
+## and to visualize its inverse by calculation or by caching (cacheSolve)
 
-## Write a short comment describing this function
+## makeCacheMatrix generates or re-sets the values of a matrix and provides the functions to
+## calculate, store in memory and visualize the inverse of the initial input.
 
 makeCacheMatrix <- function(x = matrix(1:4, nrow=2, ncol=2)) {
   inv <- NULL
@@ -21,7 +22,8 @@ makeCacheMatrix <- function(x = matrix(1:4, nrow=2, ncol=2)) {
 }
 
 
-## Write a short comment describing this function
+## makeCacheMatrix retrieve from memory the inverse of the matrix obtained by makeCacheMatrix
+## or calculate the inverse using the compute_inverse function.
 
 cacheSolve <- function(x, ...) {
   inv <- x$get_inverse()
